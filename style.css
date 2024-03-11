@@ -176,3 +176,13 @@
     }
 
 }
+
+@media (max-width:1920px) {
+
+    .main-content>div {
+        height: 90%;
+        width: 90%;
+
+    }
+
+}
