@@ -33,7 +33,6 @@
 .main-content {
     display: grid;
     grid-template-columns: 3fr .2fr 3fr;
-
 }
 
 
@@ -173,16 +172,6 @@
 
     .project-card {
         height: 10vh;
-    }
-
-}
-
-@media (max-width:1920px) {
-
-    .main-content>div {
-        height: 90%;
-        width: 90%;
-
     }
 
 }
