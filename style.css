@@ -30,6 +30,7 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    width: 240px;
 }
 
 .right {
@@ -71,6 +72,7 @@ body {
 
 .sidebar {
     display: grid;
+    width: fit-content;
 }
 
 .sidebar li {
@@ -81,7 +83,7 @@ body {
 
 .side-item {
     height: 50px;
-    width: 10vw;
+    width: fit-content;
 }
 
 .side-item img {
@@ -103,11 +105,16 @@ ul li {
     align-items: center;
     justify-content: flex-start;
     margin-right: 50px;
+    gap: 5px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 .DashBtn img {
-    height: 90px;
-    width: 100px;
+    height: 45px;
+    width: 45px;
 }
 
 
@@ -121,7 +128,9 @@ ul li {
 }
 
 .tophead {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr 2fr;
+    height: 50px;
     background-color: #fb923c;
     width: 100%;
 }
@@ -132,9 +141,15 @@ ul li {
     width: 100px;
 }
 
+.mini-profile {
+    background-color: red;
+    height: 10px;
+    width: 10px;
+}
+
 .bothead {
-    display: flex;
-    grid-template-columns: 1fr 3fr 3fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr 1fr 1fr;
     background-color: #fb923c;
     width: 100%;
     height: 50px;
@@ -175,6 +190,12 @@ ul li {
     grid-row: 2/2;
 }
 
+.button {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+
+}
 
 .lefttop,
 .righttop {
