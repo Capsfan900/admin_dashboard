@@ -9,24 +9,33 @@
     padding: 0px;
 }
 
+body {
+    background-image: url(./img/simple.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
 
 .container {
     display: flex;
     height: 100vh;
     width: 100vw;
-
+    background-color: rgba(120, 113, 108, .5);
 }
 
 .left {
+    background-color: rgba(120, 113, 108, .5);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
-    background-color: #bbf7d0;
-
 }
 
 .right {
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
-    background-color: #16a34a;
     width: 100%;
 }
 
@@ -42,6 +51,12 @@
     height: 70vh;
     width: 50vw;
     gap: 25px;
+}
+
+.project-card {
+    background-color: #fb923c;
+    border-radius: 2%;
+    font-size: small;
 }
 
 
@@ -60,23 +75,41 @@
 
 .sidebar li {
     align-items: center;
-    font-size: large;
-    color: red;
-    opacity: 70%;
+    font-size: 20px;
+    color: white;
 }
 
-
 .side-item {
-
-    height: fit-content;
+    height: 50px;
     width: 10vw;
 }
 
-.DashBtn {
+.side-item img {
     height: 50px;
-    width: fit-content;
-    margin-right: 90px;
 }
+
+ul li {
+    list-style-type: none;
+    height: 25px;
+    width: 175px;
+}
+
+
+.DashBtn {
+    fill: green;
+    height: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 50px;
+}
+
+.DashBtn img {
+    height: 90px;
+    width: 100px;
+}
+
 
 .header {
     gap: 25px;
@@ -84,33 +117,32 @@
     flex-direction: column;
     justify-content: space-around;
     height: fit-content;
-    background-color: black;
     align-items: center;
 }
 
 .tophead {
     display: flex;
-    background-color: chocolate;
-    width: 95%;
+    background-color: #fb923c;
+    width: 100%;
 }
 
 .tophead>div {
-    background-color: chocolate;
-    width: 95%;
-    height: 15px;
+    background-color: #fb923c;
+    height: 25px;
+    width: 100px;
 }
 
 .bothead {
     display: flex;
     grid-template-columns: 1fr 3fr 3fr 1fr 1fr;
-    background-color: chocolate;
-    width: 95%;
+    background-color: #fb923c;
+    width: 100%;
     height: 50px;
 }
 
 .bothead>div {
     display: flex;
-    background-color: chocolate;
+    background-color: #fb923c;
     width: 95%;
 
 }
@@ -132,7 +164,7 @@
 
 .alerts>div {
     display: grid;
-    background-color: coral;
+    background-color: #fb923c;
     border-radius: 2%;
     grid-template-rows: 1fr 5fr;
 }
@@ -141,12 +173,6 @@
 .trend-flexbox,
 .annc-flexbox {
     grid-row: 2/2;
-}
-
-
-.project-card {
-    background-color: rgb(219, 230, 8);
-    border-radius: 2%;
 }
 
 
